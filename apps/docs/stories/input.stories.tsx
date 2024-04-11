@@ -1,13 +1,13 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { Input } from "@repo/ui/components";
+import type { Meta, StoryObj } from '@storybook/react';
+import { Input } from '@repo/ui/components';
 
 const meta: Meta<typeof Input> = {
-  title: "test/Input",
+  title: 'test/Input',
   component: Input,
   argTypes: {
     type: {
-      control: { type: "radio" },
-      options: ["button", "submit", "reset"],
+      control: { type: 'radio' },
+      options: ['button', 'submit', 'reset'],
     },
   },
 };
