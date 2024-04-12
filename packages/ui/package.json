@@ -4,11 +4,13 @@
   "sideEffects": false,
   "license": "MIT",
   "exports": {
-    "./components": "./src/components/index.ts"
+    "./components": "./src/components/index.ts",
+    "./index.css": "./dist/index.css"
   },
   "scripts": {
     "build": "tsup",
-    "dev": "tsup --watch",
+    "build:style": "tailwindcss -i ./src/styles/globals.css -o ./dist/index.css",
+    "dev": "pnpm build:style && tsup --watch",
     "lint": "eslint . --max-warnings 0",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
