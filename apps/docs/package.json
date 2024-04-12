@@ -11,12 +11,14 @@
     "lint": "eslint ./stories/*.stories.tsx --max-warnings 0"
   },
   "dependencies": {
-    "@acme/ui": "workspace:*",
+    "@repo/ui": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@storybook/addon-a11y": "^7.6.17",
     "@storybook/addon-actions": "^7.6.17",
     "@storybook/addon-docs": "^7.6.17",
     "@storybook/addon-essentials": "^7.6.17",
@@ -27,8 +29,9 @@
     "eslint": "^8.57.0",
     "serve": "^14.2.1",
     "storybook": "^7.6.17",
-    "@repo/typescript-config": "workspace:*",
+    "storybook-addon-pseudo-states": "^2.2.1",
     "typescript": "^5.3.3",
-    "vite": "^5.1.4"
+    "vite": "^5.1.4",
+    "vite-tsconfig-paths": "^4.3.2"
   }
 }
