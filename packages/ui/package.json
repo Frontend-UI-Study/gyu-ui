@@ -8,7 +8,7 @@
     "./index.css": "./dist/index.css"
   },
   "scripts": {
-    "build": "tsup",
+    "build": "tsup && pnpm build:style",
     "build:style": "tailwindcss -i ./src/styles/globals.css -o ./dist/index.css",
     "dev": "pnpm build:style && tsup --watch",
     "lint": "eslint . --max-warnings 0",
