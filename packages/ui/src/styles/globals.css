@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  /* 데이터가 있으면 나오는데 또 포커스여야함  => 즉, 포커스이고 데이터가 있어야함 */
+  .input:focus:not(:placeholder-shown) + div .icon-close {
+    @apply fill-gray500;
+  }
+
+  .input:not(:placeholder-shown) + div .icon-search {
+    @apply fill-gray700;
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
