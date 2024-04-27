@@ -3,3 +3,4 @@ export * from './ButtonGroup';
 export * from './IconButton';
 export * from './Input';
 export * from './Textarea';
+export * from './Card';
