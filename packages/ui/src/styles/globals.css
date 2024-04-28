@@ -77,11 +77,12 @@
   }
 }
 
+/* 해당 스타일은 shadcn 용 스타일인데 굳이 해야하나? */
 @layer base {
   * {
-    @apply border-border;
+    /*@apply border-border;*/
   }
  body {
- @apply bg-background text-foreground;
+    /*@apply bg-background text-foreground;*/
   }
 }

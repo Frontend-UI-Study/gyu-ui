@@ -13,9 +13,9 @@ module.exports = {
         '2xl': '1400px',
       },
     },
-    colors: {
-      ...colorMap,
-    },
+    // colors: {
+    //   // ...colorMap,
+    // },
     extend: {
       colors: {
         border: 'hsl(var(--border))',
@@ -51,6 +51,7 @@ module.exports = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+        ...colorMap,
       },
       borderRadius: {
         lg: 'var(--radius)',
