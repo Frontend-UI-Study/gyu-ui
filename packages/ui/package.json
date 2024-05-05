@@ -12,7 +12,8 @@
   "scripts": {
     "build": "tsup && pnpm build:style",
     "build:style": "tailwindcss -i ./src/styles/globals.css -o ./dist/index.css",
-    "dev": "pnpm build:style && tsup --watch",
+    "dev": "pnpm dev:style && tsup --watch",
+    "dev:style": "tailwindcss -i ./src/styles/globals.css -o ./dist/index.css --watch",
     "lint": "eslint . --max-warnings 0",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
@@ -34,6 +35,7 @@
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.2",
+    "@radix-ui/react-tabs": "^1.0.4",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "lucide-react": "^0.367.0",
