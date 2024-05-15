@@ -10,6 +10,7 @@ module.exports = {
       center: true,
       padding: '2rem',
       screens: {
+        md: '360px',
         '2xl': '1400px',
       },
     },
@@ -74,5 +75,28 @@ module.exports = {
       },
     },
   },
-  plugins: [require('tailwindcss-animate')],
+  plugins: [
+    require('tailwindcss-animate'),
+    // GYU-TODO: 후에 typography 속성 정의해서 정리하기
+    // typography 어떻게 할지 고민, @tailwindcss/typography ??
+    function ({ addUtilities, theme }) {
+      const newUtilities = {
+        '.T2_600': {
+          fontFamily: 'Pretendard',
+          fontStyle: 'normal',
+          fontWeight: '600',
+          fontSize: '15px',
+          lineHeight: '24px',
+        },
+        '.B2': {
+          fontFamily: 'Pretendard',
+          fontStyle: 'normal',
+          fontWeight: '400',
+          fontSize: '13px',
+          lineHeight: '20px',
+        },
+      };
+      addUtilities(newUtilities);
+    },
+  ],
 };
