@@ -1,0 +1,140 @@
+import { Meta, Unstyled } from '@storybook/blocks'
+
+export const sampleText = 'Lorem ipsum dolor sit amet.';
+export const sampleButtonText = '버튼 텍스트';
+
+
+# Typography
+
+**Font:** Pretendard
+
+**Weights:** 400(Regular), 500(Medium), 600(SemiBold), 700(Bold)
+
+<Unstyled>
+    <h3>Header</h3>
+    <h5>콘텐츠 타이틀, 프로모션</h5>
+
+    <div className="mt-15">
+        <div className="flex gap-2 items-center w-full">
+            <h1>H1</h1>
+            <h1>{sampleText}</h1>
+        </div>
+        <div className="flex gap-2 items-center w-full">
+            <h2>H2</h2>
+            <h2>{sampleText}</h2>
+        </div>
+        <div className="flex gap-2 items-center w-full">
+            <h3>H3</h3>
+            <h3>{sampleText}</h3>
+        </div>
+        <div className="flex gap-2 items-center w-full">
+            <h4>H4</h4>
+            <h4>{sampleText}</h4>
+        </div>
+        <div className="flex gap-2 items-center w-full">
+            <h5>h5</h5>
+            <h5>{sampleText}</h5>
+        </div>
+        <div className="flex gap-2 items-center w-full">
+            <h6>H6</h6>
+            <h6>{sampleText}</h6>
+        </div>
+    </div>
+
+    <div className="mt-20">
+        <h3>Title</h3>
+        <p>APP 헤더, 본문 타이틀, 유저 카드 타이틀, 액티비티 타이틀</p>
+
+        <div className="mt-10">
+            <div className="flex gap-2 items-center w-full">
+                <p className="T1_700">T1_700</p>
+                <p className="T1_700">{sampleText}</p>
+            </div>
+            <div className="flex gap-2 items-center w-full">
+                <p className="T1_600">T1_600</p>
+                <p className="T1_600">{sampleText}</p>
+            </div>
+            <div className="flex gap-2 items-center w-full">
+                <p className="T1_500">T1_500</p>
+                <p className="T1_500">{sampleText}</p>
+            </div>
+            <div className="flex gap-2 items-center w-full">
+                <p className="T2_700">T2_700</p>
+                <p className="T2_700">{sampleText}</p>
+            </div>
+            <div className="flex gap-2 items-center w-full">
+                <p className="T2_600">T2_600</p>
+                <p className="T2_600">{sampleText}</p>
+            </div>
+            <div className="flex gap-2 items-center w-full">
+                <p className="T2_500">T2_500</p>
+                <p className="T2_500">{sampleText}</p>
+            </div>
+        </div>
+    </div>
+
+    <div className="mt-20">
+        <h3>Body</h3>
+        <h5>본문 기본, 본문 서브 문구, 본문 안내 문구</h5>
+
+        <div className="mt-10">
+            <div className="flex gap-2 items-center w-full">
+                <p className="B1">B1</p>
+                <p className="B1">{sampleText}</p>
+            </div>
+            <div className="flex gap-2 items-center w-full">
+                <p className="B2">B2</p>
+                <p className="B2">{sampleText}</p>
+            </div>
+        </div>
+    </div>
+
+    <div className="mt-20">
+        <h3>Button</h3>
+        <h5>본문 기본, 본문 서브 문구, 본문 안내 문구</h5>
+
+        <div className="mt-10">
+            <div className="flex gap-2 items-center w-full">
+                <p className="BTN1_700">BTN1_700</p>
+                <p className="BTN1_700">{sampleButtonText}</p>
+            </div>
+            <div className="flex gap-2 items-center w-full">
+                <p className="BTN1_500">BTN1_500</p>
+                <p className="BTN1_500">{sampleButtonText}</p>
+            </div>
+            <div className="flex gap-2 items-center w-full">
+                <p className="BTN2_line">BTN2_line</p>
+                <p className="BTN2_line">{sampleButtonText}</p>
+            </div>
+            <div className="flex gap-2 items-center w-full">
+                <p className="BTN2_500">BTN2_500</p>
+                <p className="BTN2_500">{sampleButtonText}</p>
+            </div>
+        </div>
+    </div>
+
+    <div className="mt-20">
+        <h3>Caption/Flag</h3>
+        <h5>본문 최소, 유의사항, 라벨, 뱃지, 플래그, Helper Text 공통</h5>
+
+        <div className="mt-10">
+            <div className="flex gap-2 items-center w-full">
+                <p className="C1_500">C1_500</p>
+                <p className="C1_500">{sampleText}</p>
+            </div>
+            <div className="flex gap-2 items-center w-full">
+                <p className="C1_400">C1_400</p>
+                <p className="C1_400">{sampleText}</p>
+            </div>
+            <div className="flex gap-2 items-center w-full">
+                <p className="C2_700">C2_700</p>
+                <p className="C2_700">{sampleText}</p>
+            </div>
+            <div className="flex gap-2 items-center w-full">
+                <p className="C2_400">C2_400</p>
+                <p className="C2_400">{sampleText}</p>
+            </div>
+        </div>
+    </div>
+
+</Unstyled>

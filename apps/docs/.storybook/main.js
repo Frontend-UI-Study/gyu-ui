@@ -1,15 +1,25 @@
 import { dirname, join } from 'path';
+import remarkGfm from 'remark-gfm';
 
 function getAbsolutePath(value) {
   return dirname(require.resolve(join(value, 'package.json')));
 }
 
 const config = {
-  stories: ['../stories/*.stories.tsx', '../stories/**/*.stories.tsx'],
+  stories: ['../stories/*.stories.tsx', '../stories/**/*.stories.tsx', '../stories/**/*.mdx'],
   addons: [
     getAbsolutePath('@storybook/addon-links'),
     getAbsolutePath('@storybook/addon-essentials'),
-    getAbsolutePath('@storybook/addon-docs'),
+    {
+      name: '@storybook/addon-docs',
+      options: {
+        mdxPluginOptions: {
+          mdxCompileOptions: {
+            remarkPlugins: [remarkGfm],
+          },
+        },
+      },
+    },
     // add addon
     getAbsolutePath('@storybook/addon-a11y'),
     getAbsolutePath('storybook-addon-pseudo-states'),
