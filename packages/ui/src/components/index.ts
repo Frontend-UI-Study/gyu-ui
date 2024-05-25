@@ -6,6 +6,7 @@ export * from './Textarea';
 export * from './Card';
 export * from './Accordion';
 export * from './Tabs';
+export * from './Dropdown';
 
 // CORE
 export * from './core/Tabs';
