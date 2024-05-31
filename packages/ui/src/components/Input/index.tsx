@@ -23,6 +23,9 @@ const inputWrapperVariants = cva(
         default: 'border',
         underline: 'border-b rounded-none bg-transparent',
       },
+      fullWidth: {
+        true: 'w-full',
+      },
     },
   },
 );
@@ -67,6 +70,14 @@ export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> 
    * Input UI 유형
    */
   variant?: 'default' | 'underline';
+  /**
+   * 최대 높이
+   */
+  fullWidth?: boolean;
+  /**
+   * 오른쪽 Slot (Icon)
+   */
+  rightSlot?: React.ReactNode;
 }
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
@@ -79,6 +90,8 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       type,
       className,
       onReset,
+      fullWidth = false,
+      rightSlot,
       ...props
     },
     ref,
@@ -93,7 +106,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     const isPasswordType = type === 'password';
     const _type = type === 'password' && viewOn ? 'text' : type;
     return (
-      <div className={cn(inputWrapperVariants({ error, disabled, variant }))}>
+      <div className={cn(inputWrapperVariants({ error, disabled, variant, fullWidth }))}>
         <input
           // TODO: group 써서 처리하기 - 현재 찾아보니깐, group 으로 하기 어려운거 같음.
           // not 지원안함, 복자한 형제, 부모 제어를 위한 방식 없음?
@@ -122,6 +135,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
             )
           ) : null}
           {withSearch ? <IconSearch className={cn('icon-search', disabled && 'fill-gray300')} /> : null}
+          {rightSlot}
         </div>
       </div>
     );

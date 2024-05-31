@@ -10,3 +10,4 @@ export * from './Dropdown';
 
 // CORE
 export * from './core/Tabs';
+export * from './core/Combobox';
