@@ -3,8 +3,8 @@ import { Tabs } from '@repo/ui/components';
 import { useState } from 'react';
 
 const meta: Meta<typeof Tabs> = {
-  component: Tabs,
   title: 'DS/Tabs',
+  component: Tabs,
   args: {
     // variants: 'tertiary',
   },

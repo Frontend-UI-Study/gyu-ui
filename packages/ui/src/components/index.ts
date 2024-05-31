@@ -1,12 +1,12 @@
-export * from './Button';
-export * from './ButtonGroup';
-export * from './IconButton';
-export * from './Input';
-export * from './Textarea';
-export * from './Card';
-export * from './Accordion';
-export * from './Tabs';
-export * from './Dropdown';
+export * from './sds/Button';
+export * from './sds/ButtonGroup';
+export * from './sds/IconButton';
+export * from './sds/Input';
+export * from './sds/Textarea';
+export * from './sds/Card';
+export * from './sds/Accordion';
+export * from './sds/Tabs';
+export * from './sds/Dropdown';
 
 // CORE
 export * from './core/Tabs';

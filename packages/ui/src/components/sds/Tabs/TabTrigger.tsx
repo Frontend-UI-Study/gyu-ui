@@ -3,7 +3,7 @@ import { cva } from 'class-variance-authority';
 import * as TabsPrimitive from '@radix-ui/react-tabs';
 
 import { cn } from '@/lib/utils';
-import { useTabsContext } from '@/components/Tabs/context';
+import { useTabsContext } from '@/components/sds/Tabs/context';
 
 const tabsVariants = cva(cn('display items-center justify-center text-nowrap'), {
   variants: {

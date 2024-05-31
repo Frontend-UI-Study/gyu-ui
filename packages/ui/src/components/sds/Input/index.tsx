@@ -3,7 +3,7 @@ import { useCallback, useState } from 'react';
 import { cva } from 'class-variance-authority';
 
 import { cn } from '@/lib/utils';
-import { IconViewOff } from '@/components/Input/IconViewOff';
+import { IconViewOff } from '@/components/sds/Input/IconViewOff';
 
 import { IconViewOn } from './IconViewOn';
 import { IconSearch } from './IconSearch';
