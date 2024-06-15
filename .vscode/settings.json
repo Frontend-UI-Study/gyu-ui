@@ -11,6 +11,9 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
   "typescript.suggest.autoImports": true,
   "typescript.validate.enable": true,
   "cSpell.words": ["Combobox"]
